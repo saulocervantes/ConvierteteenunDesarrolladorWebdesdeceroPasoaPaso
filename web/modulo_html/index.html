@@ -5,21 +5,20 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="img/caballos.jpg" width="300px" alt="Caballos galopando">
-    <iframe width="500px" height="200px" src="index.html" frameborder="0"></iframe>
-    <iframe width="500px" height="300px" src="https://www.youtube.com/embed/vw91Xhvj1WA" frameborder="0" allowfullscreen></iframe>
-    <iframe width="500px" height="300px" src="http://www.tributomultimedia.com" frameborder="0"></iframe>
-    
-<!--
-    <embed src="caballos_galopando.mp4">
-    <embed src="caballos.mp3">
--->
    
-   <object data="caballos.mp3" type=""></object>
-   <object data="caballos_galopando.mp4" type=""></object>
-   <object data="img/caballos.jpg" width="400px"></object>
-   <object data="caballos_galopando.mp4" type="">
-       <param name="autostart" value="true">
-   </object>
+    <audio src="caballos.mp3" controls autoplay loop preload="auto">
+        <p>Tu navegador no implementa este audio.</p>
+    </audio>
+    
+    <video src="caballos_galopando.mp4" width="300px" controls loop autoplay></video>
+    
+    <video  width="300px" controls loop poster="img/caballos.jpg" >
+        <source src="caballos_galopando.mp4" type="video/mp4">
+        <source src="video1.webm" type="video/webm">
+        <source src="video1.ogv" type="video/ogv">
+        <p>Tu navegador no puede reproducir este contenido</p>
+        <track kind="subtitles" label="Español" srclang="es" src="subtitulos.vtt" default></track>
+    </video>
+    
 </body>
 </html>
