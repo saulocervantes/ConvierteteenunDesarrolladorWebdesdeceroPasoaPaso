@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Canvas y Svg</title>
-    
-    <style>
-        #mi-canvas{
-            border: 1px solid black;
-        }
-        
-        svg{
-            border: 1px solid black;
-        }
-    
-        .st0 {
-            fill: #4d4d50;
-        }
-        
-        .st1 {
-            fill: #FFFFFF;
-        }
-
-    </style>
+    <title>Datos Tabulares</title>
 </head>
-
 <body>
+    <table border="1" cellpadding="5" cellspacing="5">
+        <tr>
+            <td>No.</td>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>No. Identificación</td>
+            <td>Teléfono</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Fulano</td>
+            <td>Anónimo</td>
+            <td>32514609</td>
+            <td>6549873210</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2 y 3</td>
+            <td>Mengano</td>
+            <td>Desconocido</td>
+            <td>32514609</td>
+            <td>6549873210</td>
+        </tr>
+        <tr>
+            <td>Mengano</td>
+            <td>Desconocido</td>
+            <td>32514609</td>
+            <td>6549873210</td>
+        </tr>
+    </table>
     
-    <canvas id="mi-canvas" width="400" height="300"></canvas>
-   
-    <script>
-        var c = document.getElementById("mi-canvas");
-        var ct = c.getContext("2d");
-        ct.fillStyle = "#44bc6d";
-        ct.fillRect( 130, 70, 100, 100 );
-    </script>
+    <br>
     
-    <svg width="500" height="300">
-        <g class="grupo1">
-            <rect x="70" y="50" width="100px" height="100px" />
-            <ellipse cx="300" cy="105" rx="60" ry="50" stroke="yellow" stroke-width="5px"/>
-            <circle cx="210" cy="200" r="15" fill="green" stroke="blue"/>
-            <line x1="30" y1="250" x2="410" y2="230" stroke="blue" stroke-width="6px" />
-        </g>
+    <table border="1" cellpadding="5" cellspacing="5">
+        <colgroup>
+            <col width="100">
+            <col width="180">
+            <col style="background-color:green;">
+        </colgroup>
         
-    </svg>
-
-    <svg version="1.1" id="icono-avion" x="0px" y="0px" width="500" height="300" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
-
-        <circle id="fondo-circulo_1_" class="st0" cx="127.5" cy="127.5" r="93.6" />
-        <path id="avion" class="st1" d="M119.4,106.3c0,0-0.9-32.7,8.2-32.7c9.1,0,8.6,33.2,8.6,33.2l40.9,34.6l1.7,10.8l-43.2-25.8l-3.3,37
-         l12.1,13.6l0.3,4.1l-16.8-4.1l-17.5,4.1l0.4-4.1l13.2-13.6l-4.4-37l-43.4,23.2l1.9-8.2L119.4,106.3z" />
-    </svg>
+        <caption>Datos de Clientes</caption>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Promedio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sutano</td>
+                <td>Privado</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Perengano</td>
+                <td>Oculto</td>
+                <td>91</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Cualquier texto</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
-
 </html>
