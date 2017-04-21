@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Canvas y Svg</title>
+    
+    <style>
+        #mi-canvas{
+            border: 1px solid black;
+        }
+        
+        svg{
+            border: 1px solid black;
+        }
+    
+        .st0 {
+            fill: #4d4d50;
+        }
+        
+        .st1 {
+            fill: #FFFFFF;
+        }
+
+    </style>
 </head>
+
 <body>
+    
+    <canvas id="mi-canvas" width="400" height="300"></canvas>
    
-    <audio src="caballos.mp3" controls autoplay loop preload="auto">
-        <p>Tu navegador no implementa este audio.</p>
-    </audio>
+    <script>
+        var c = document.getElementById("mi-canvas");
+        var ct = c.getContext("2d");
+        ct.fillStyle = "#44bc6d";
+        ct.fillRect( 130, 70, 100, 100 );
+    </script>
     
-    <video src="caballos_galopando.mp4" width="300px" controls loop autoplay></video>
-    
-    <video  width="300px" controls loop poster="img/caballos.jpg" >
-        <source src="caballos_galopando.mp4" type="video/mp4">
-        <source src="video1.webm" type="video/webm">
-        <source src="video1.ogv" type="video/ogv">
-        <p>Tu navegador no puede reproducir este contenido</p>
-        <track kind="subtitles" label="Español" srclang="es" src="subtitulos.vtt" default></track>
-    </video>
-    
+    <svg width="500" height="300">
+        <g class="grupo1">
+            <rect x="70" y="50" width="100px" height="100px" />
+            <ellipse cx="300" cy="105" rx="60" ry="50" stroke="yellow" stroke-width="5px"/>
+            <circle cx="210" cy="200" r="15" fill="green" stroke="blue"/>
+            <line x1="30" y1="250" x2="410" y2="230" stroke="blue" stroke-width="6px" />
+        </g>
+        
+    </svg>
+
+    <svg version="1.1" id="icono-avion" x="0px" y="0px" width="500" height="300" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+
+        <circle id="fondo-circulo_1_" class="st0" cx="127.5" cy="127.5" r="93.6" />
+        <path id="avion" class="st1" d="M119.4,106.3c0,0-0.9-32.7,8.2-32.7c9.1,0,8.6,33.2,8.6,33.2l40.9,34.6l1.7,10.8l-43.2-25.8l-3.3,37
+         l12.1,13.6l0.3,4.1l-16.8-4.1l-17.5,4.1l0.4-4.1l13.2-13.6l-4.4-37l-43.4,23.2l1.9-8.2L119.4,106.3z" />
+    </svg>
 </body>
+
 </html>
