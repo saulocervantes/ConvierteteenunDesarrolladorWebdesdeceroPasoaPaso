@@ -2,84 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formularios</title>
-    
-    <form method="get" enctype="multipart/form-data">
-        <fieldset>
-            <legend>Datos personales</legend>
-            <label for="nombre">Nombre</label>
-            <input name="nombre" id="nombre" type="text" autocomplete="off">
-            <br><br>
-            <label for="email">Email</label>
-            <input name="email" id="email" type="email">
-            <br><br>
-            <label for="password">Contraseña</label>
-            <input name="password" type="password">
-            <br><br>
-            <label for="fecha">Fecha de nacimiento</label>
-            <input name="fecha" type="date">
-            <br><br>
-            <input name="oculto" type="hidden" value="Escondido">
-            <input type="button" value="Enviar">
-            <input type="submit" value="Enviar Formulario">
-        </fieldset>
-        
-        <br><br>
-        
-        <fieldset>
-            <legend>Selecciona un único animal</legend>
-            <label for="perro">Perro</label>
-            <input name="animal" value="perro" id="perro" type="radio">
-            <label for="gato">Gato</label>
-            <input name="animal" value="gato" id="gato" type="radio">
-            <label for="tortuga">Tortuga</label>
-            <input name="animal" value="tortuga" id="tortuga" type="radio">
-            <label for="delfin">Delfín</label>
-            <input name="animal" value="delfin" id="delfin" type="radio">
-        </fieldset>
-        
-        <br><br>
-        
-        <fieldset>
-            <legend>Selecciona algunas series de interés</legend>
-            <label for="GOT">Games Of Thrones</label>
-            <input name="serie[]" value="GOT" id="GOT" type="checkbox">
-            <label for="twd">The Walking Dead</label>
-            <input name="serie[]" value="twd" id="twd" type="checkbox">
-            <label for="himym">How I Met Your Mother</label>
-            <input name="serie[]" value="himym" id="himym" type="checkbox">
-            <label for="daredevil">Daredevil</label>
-            <input name="serie[]" value="daredevil" id="daredevil" type="checkbox">
-            <label for="otra">Otra</label>
-            <input name="serie[]" value="otra" id="otra" type="checkbox" disabled>            
-        </fieldset>
-        
-        <br><br>
-        
-        <fieldset>
-            <input type="range" min="0" max="100" value="25">
-            <br><br>
-            <input name="buscar" type="search">
-            <br><br>
-            <input name="telefono" type="tel">
-            <br><br>
-            <input name="semana" type="week">
-            <br><br>
-            <input name="mes" type="month">
-            <br><br>
-            <input src="img/caballos.jpg" width="35px" type="image">
-            <br><br>
-            <input name="color" type="color">
-            <br><br>
-            <input name="archivo" type="file">
-            <br><br>
-            <input name="archivos" type="file" multiple>
-            <br><br>
-            <input type="reset" value="Resetear">
-        </fieldset>
-    </form>
+    <title>Formularios Parte 2</title>
 </head>
 <body>
+    <form>
+        <input type="submit" value="Enviar">
+        <button type="submit">Botón Enviar</button>
+        <select name="lenguaje" id="">
+            <option value="">Selecciona un lenguaje</option>
+            <optgroup label="Lenguaje del lado del cliente">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="Lenguaje del lado del servidor">
+                <option value="csharp">C#</option>
+                <option value="java">Java</option>
+                <option value="phyton">Phyton</option>
+            </optgroup>
+            
+        </select>
+        
+        <br><br>
+        
+        <select name="comic[]" id="" multiple>
+            <optgroup label="Selecciona alagunos comics">
+                <option value="spiderman">Spider-Man</option>
+                <option value="batman">Batman</option>
+                <option selected value="hulk">Hulk</option>
+                <option value="saga">Saga</option>
+            </optgroup>
+        </select>
+        
+        <br><br>
+        
+        <fieldset>
+            <legend>Ciudades</legend>
+            <label for="ciudad">Busca una ciudad de México</label>
+            <input name="ciudad" id="ciudad" type="search" list="ciudades">
+            <datalist id="ciudades">
+                <option value="Monterrey"></option>
+                <option value="Guadalajara"></option>
+                <option value="CDMX"></option>
+            </datalist>
+        </fieldset>
+        
+        <br><br>
+        
+        <progress value="75" max="100"></progress>
+        
+        <br><br>
+        
+        <textarea name="mensaje" id="" cols="40" rows="10" maxlength="5"></textarea>
+        
+        <br><br>
+        
+        <fieldset>
+            <legend>Contactenos</legend>
+            <input name="nombre" type="text" placeholder="Su nombre" required>
+            <br><br>
+            <input name="asunto" type="text" placeholder="Asunto">
+            <br><br>
+            <input type="tel" placeholder="teléfono">
+            <br><br>
+            <textarea name="nota" id="" cols="40" rows="10"></textarea>
+            <br><br>
+            <button>Enviar</button>
+        </fieldset>
+    </form>
     
 </body>
 </html>
