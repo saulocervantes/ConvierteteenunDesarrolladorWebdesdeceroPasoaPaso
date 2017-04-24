@@ -2,74 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formularios Parte 2</title>
+    <title>Formularios Parte 3</title>
 </head>
 <body>
-    <form>
-        <input type="submit" value="Enviar">
-        <button type="submit">Botón Enviar</button>
-        <select name="lenguaje" id="">
-            <option value="">Selecciona un lenguaje</option>
-            <optgroup label="Lenguaje del lado del cliente">
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="javascript">JavaScript</option>
-            </optgroup>
-            <optgroup label="Lenguaje del lado del servidor">
-                <option value="csharp">C#</option>
-                <option value="java">Java</option>
-                <option value="phyton">Phyton</option>
-            </optgroup>
-            
-        </select>
-        
+<!--
+    <form name="multiplicacion" onsubmit="return false" oninput="resultado.value = numero1.value * numero2.value">
+        <label for="">Calculadora de multiplicación</label>
         <br><br>
-        
-        <select name="comic[]" id="" multiple>
-            <optgroup label="Selecciona alagunos comics">
-                <option value="spiderman">Spider-Man</option>
-                <option value="batman">Batman</option>
-                <option selected value="hulk">Hulk</option>
-                <option value="saga">Saga</option>
-            </optgroup>
-        </select>
-        
-        <br><br>
-        
-        <fieldset>
-            <legend>Ciudades</legend>
-            <label for="ciudad">Busca una ciudad de México</label>
-            <input name="ciudad" id="ciudad" type="search" list="ciudades">
-            <datalist id="ciudades">
-                <option value="Monterrey"></option>
-                <option value="Guadalajara"></option>
-                <option value="CDMX"></option>
-            </datalist>
-        </fieldset>
-        
-        <br><br>
-        
-        <progress value="75" max="100"></progress>
-        
-        <br><br>
-        
-        <textarea name="mensaje" id="" cols="40" rows="10" maxlength="5"></textarea>
-        
-        <br><br>
-        
-        <fieldset>
-            <legend>Contactenos</legend>
-            <input name="nombre" type="text" placeholder="Su nombre" required>
-            <br><br>
-            <input name="asunto" type="text" placeholder="Asunto">
-            <br><br>
-            <input type="tel" placeholder="teléfono">
-            <br><br>
-            <textarea name="nota" id="" cols="40" rows="10"></textarea>
-            <br><br>
-            <button>Enviar</button>
-        </fieldset>
+        <input id="numero1" type="number" step="any">
+        <input id="numero2" type="number" step="any"> =
+        <output id="resultado" for="numero1 numero2">
     </form>
+-->
+    
+<!--    <form oninput="multiplicacion()">-->
+    <form id="formu">
+        <label for="">Calculadora de multiplicación</label>
+        <br><br>
+        <input id="number1" type="number" step="any">
+        <input id="number2" type="number" step="any"> =
+        <output id="resultado" for="number1 number2">
+    </form>
+    
+    <script>
+        document.getElementById('formu').addEventListener('input', multiplicacion);
+        
+        function multiplicacion(){
+            var numero1 = document.getElementById('number1').value;
+            var numero2 = document.getElementById('number2').value;
+            
+            var resultado = numero1 * numero2;
+            
+            document.getElementById('resultado').value = resultado;
+        }    
+    </script>
     
 </body>
 </html>
