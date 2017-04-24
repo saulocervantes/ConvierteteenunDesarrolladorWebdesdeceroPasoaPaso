@@ -2,40 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formularios Parte 3</title>
+    <title>Elementos Interactivos</title>
+    <style>
+        summary{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<!--
-    <form name="multiplicacion" onsubmit="return false" oninput="resultado.value = numero1.value * numero2.value">
-        <label for="">Calculadora de multiplicación</label>
-        <br><br>
-        <input id="numero1" type="number" step="any">
-        <input id="numero2" type="number" step="any"> =
-        <output id="resultado" for="numero1 numero2">
-    </form>
--->
-    
-<!--    <form oninput="multiplicacion()">-->
-    <form id="formu">
-        <label for="">Calculadora de multiplicación</label>
-        <br><br>
-        <input id="number1" type="number" step="any">
-        <input id="number2" type="number" step="any"> =
-        <output id="resultado" for="number1 number2">
-    </form>
-    
-    <script>
-        document.getElementById('formu').addEventListener('input', multiplicacion);
+    <details>
+       <summary>Click para mostrar contenido</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sed minima ullam nesciunt corporis nobis doloremque architecto quia, nostrum, iste repellendus! Ullam voluptatum nam quasi maiores a saepe illo ipsam.</p>
         
-        function multiplicacion(){
-            var numero1 = document.getElementById('number1').value;
-            var numero2 = document.getElementById('number2').value;
-            
-            var resultado = numero1 * numero2;
-            
-            document.getElementById('resultado').value = resultado;
-        }    
-    </script>
+        <details>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt obcaecati possimus ullam architecto id, illum quisquam consequuntur, temporibus ducimus veritatis, quod reiciendis dicta, dolores placeat sit minus tenetur dolorem laudantium.</p>
+        </details>
+    </details>
     
+    <details>
+        <summary>Menú</summary>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </details>
 </body>
 </html>
