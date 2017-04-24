@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Datos Tabulares</title>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+    
+    <form method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input name="nombre" id="nombre" type="text" autocomplete="off">
+            <br><br>
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email">
+            <br><br>
+            <label for="password">Contraseña</label>
+            <input name="password" type="password">
+            <br><br>
+            <label for="fecha">Fecha de nacimiento</label>
+            <input name="fecha" type="date">
+            <br><br>
+            <input name="oculto" type="hidden" value="Escondido">
+            <input type="button" value="Enviar">
+            <input type="submit" value="Enviar Formulario">
+        </fieldset>
+        
+        <br><br>
+        
+        <fieldset>
+            <legend>Selecciona un único animal</legend>
+            <label for="perro">Perro</label>
+            <input name="animal" value="perro" id="perro" type="radio">
+            <label for="gato">Gato</label>
+            <input name="animal" value="gato" id="gato" type="radio">
+            <label for="tortuga">Tortuga</label>
+            <input name="animal" value="tortuga" id="tortuga" type="radio">
+            <label for="delfin">Delfín</label>
+            <input name="animal" value="delfin" id="delfin" type="radio">
+        </fieldset>
+        
+        <br><br>
+        
+        <fieldset>
+            <legend>Selecciona algunas series de interés</legend>
+            <label for="GOT">Games Of Thrones</label>
+            <input name="serie[]" value="GOT" id="GOT" type="checkbox">
+            <label for="twd">The Walking Dead</label>
+            <input name="serie[]" value="twd" id="twd" type="checkbox">
+            <label for="himym">How I Met Your Mother</label>
+            <input name="serie[]" value="himym" id="himym" type="checkbox">
+            <label for="daredevil">Daredevil</label>
+            <input name="serie[]" value="daredevil" id="daredevil" type="checkbox">
+            <label for="otra">Otra</label>
+            <input name="serie[]" value="otra" id="otra" type="checkbox" disabled>            
+        </fieldset>
+        
+        <br><br>
+        
+        <fieldset>
+            <input type="range" min="0" max="100" value="25">
+            <br><br>
+            <input name="buscar" type="search">
+            <br><br>
+            <input name="telefono" type="tel">
+            <br><br>
+            <input name="semana" type="week">
+            <br><br>
+            <input name="mes" type="month">
+            <br><br>
+            <input src="img/caballos.jpg" width="35px" type="image">
+            <br><br>
+            <input name="color" type="color">
+            <br><br>
+            <input name="archivo" type="file">
+            <br><br>
+            <input name="archivos" type="file" multiple>
+            <br><br>
+            <input type="reset" value="Resetear">
+        </fieldset>
+    </form>
 </head>
 <body>
-    <table border="1" cellpadding="5" cellspacing="5">
-        <tr>
-            <td>No.</td>
-            <td>Nombre</td>
-            <td>Apellido</td>
-            <td>No. Identificación</td>
-            <td>Teléfono</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Fulano</td>
-            <td>Anónimo</td>
-            <td>32514609</td>
-            <td>6549873210</td>
-        </tr>
-        <tr>
-            <td rowspan="2">2 y 3</td>
-            <td>Mengano</td>
-            <td>Desconocido</td>
-            <td>32514609</td>
-            <td>6549873210</td>
-        </tr>
-        <tr>
-            <td>Mengano</td>
-            <td>Desconocido</td>
-            <td>32514609</td>
-            <td>6549873210</td>
-        </tr>
-    </table>
     
-    <br>
-    
-    <table border="1" cellpadding="5" cellspacing="5">
-        <colgroup>
-            <col width="100">
-            <col width="180">
-            <col style="background-color:green;">
-        </colgroup>
-        
-        <caption>Datos de Clientes</caption>
-        <thead>
-            <tr>
-                <th>No.</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Promedio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Sutano</td>
-                <td>Privado</td>
-                <td>89</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Perengano</td>
-                <td>Oculto</td>
-                <td>91</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4">Cualquier texto</td>
-            </tr>
-        </tfoot>
-    </table>
 </body>
 </html>
