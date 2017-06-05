@@ -3,36 +3,17 @@
     padding: 0;
 }
 
-h1[title]{
-    background-color: aquamarine;
-}
-
-h1[title="etiqueta1 copia2"]{
+p span:first-child{
     background-color: aqua;
 }
 
-[data-parrafo~="parrafo"]{
-    background-color: bisque;
-    font-size: 30px;
-}
-
-[data-parrafo|="parrafo"]{
+p span:last-child{
     background-color: brown;
-    font-size: 30px;
-    color: white;
+    color: #fff;
 }
 
-h3[title^="con"]{
-    background-color: forestgreen;
-    color: white;
-    padding: 10px;
-}
-
-h3[title$=n4]{
-    background-color: firebrick;
-}
-
-h3[title*=anexado]{
-    background-color: dodgerblue;
-    font-size: 50px;
+p span:only-child{
+    background-color: chartreuse;
+    font-size: 25px;
+    color: black;
 }
