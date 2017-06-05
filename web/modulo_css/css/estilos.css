@@ -7,6 +7,10 @@ section{
     height: 200px;
 }
 
+section h1{
+    background-color: blueviolet;
+}
+
 nav ul{
     text-align: center;
 }
@@ -50,6 +54,7 @@ p{
     background-color: aquamarine;
 }
 
-:not(p){
-    background-color: black !important;
+section:not(.cualquiernombre){
+    width: 70%;
+    margin: 0 auto;
 }
