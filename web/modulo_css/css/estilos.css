@@ -3,30 +3,23 @@
     padding: 0;
 }
 
-#navegacion{
-    height: 50px;
+.otro_contenido > p{
     background-color: aquamarine;
+    padding: 5px;
+    margin-top: 10px;
 }
 
-#slider{
-    height: 150px;
-    background-color: aqua;
+a > strong{
+    color: red;
+    background-color: black;
+    padding: 10px;
 }
 
-#servicios{
-    background-color: burlywood;
-    height: 120px;
+p > span{
+    color: brown;
+    font-size: 20px;
 }
 
-#pie{
-    height: 50px;
-    background-color: bisque;
-}
-
-.servicios{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background-color: crimson;
-    border-radius: 50%;
+h3 + a{
+    font-size: 25px;
 }
