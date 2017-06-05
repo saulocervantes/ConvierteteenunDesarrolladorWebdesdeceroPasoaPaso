@@ -1,17 +1,15 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
-h1::before{
-    content: 'Esta es la etiqueta ';
-    font-size: 50px;
-    color: firebrick;
-    font-family: Helvetica;
+::selection{
+    background-color: red;
+    color: white;
+    text-shadow: 10px 10px 10px black;
 }
 
-h1::after{
-    content: '.';
-    font-size: 50px;
-    color: firebrick;
+h3::selection{
+    background-color: deeppink;
+    color: white;
 }
