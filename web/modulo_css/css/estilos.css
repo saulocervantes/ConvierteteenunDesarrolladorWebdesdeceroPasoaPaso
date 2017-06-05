@@ -3,32 +3,36 @@
     padding: 0;
 }
 
-.otro_contenido > p{
+h1[title]{
     background-color: aquamarine;
-    padding: 5px;
-    margin-top: 10px;
 }
 
-a > strong{
-    color: red;
-    background-color: black;
-    padding: 10px;
+h1[title="etiqueta1 copia2"]{
+    background-color: aqua;
 }
 
-p > span{
-    color: brown;
-    font-size: 20px;
+[data-parrafo~="parrafo"]{
+    background-color: bisque;
+    font-size: 30px;
 }
 
-.otro_contenido + p{
-    background-color: crimson;
+[data-parrafo|="parrafo"]{
+    background-color: brown;
+    font-size: 30px;
     color: white;
 }
 
-.otro_contenido ~ p{
-    background-color: cadetblue;
+h3[title^="con"]{
+    background-color: forestgreen;
+    color: white;
+    padding: 10px;
 }
 
-h3 ~ a{
-    font-size: 45px;
+h3[title$=n4]{
+    background-color: firebrick;
+}
+
+h3[title*=anexado]{
+    background-color: dodgerblue;
+    font-size: 50px;
 }
