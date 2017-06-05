@@ -10,6 +10,6 @@ article > * {
     border: 1px solid #3282c7;
 }
 
-article div:last-of-type{
+article p:only-of-type{
     background-color: aquamarine;
 }
