@@ -1,26 +1,32 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Helvetica;
-    color: red;
 }
 
-h3{
-    background-color: green;
-    color: white;
-    padding: 20px;
-}
-
-p{
-    padding: 20px;
-    background-color: rgba(45, 27, 147, 0.68);
-    color: white;
-}
-
-a{
-    text-decoration: none;
-}
-
-div p span{
+#navegacion{
+    height: 50px;
     background-color: aquamarine;
+}
+
+#slider{
+    height: 150px;
+    background-color: aqua;
+}
+
+#servicios{
+    background-color: burlywood;
+    height: 120px;
+}
+
+#pie{
+    height: 50px;
+    background-color: bisque;
+}
+
+.servicios{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border-radius: 50%;
 }
