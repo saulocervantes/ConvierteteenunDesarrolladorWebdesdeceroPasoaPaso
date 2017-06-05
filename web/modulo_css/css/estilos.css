@@ -39,7 +39,9 @@ h1{
     text-align: center;
 }
 
-:root{
-    background-color: teal;
-    font-family: Helvetica;
+:empty{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: aquamarine;
 }
