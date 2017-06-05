@@ -3,21 +3,15 @@
     padding: 0;
 }
 
-form{
-    width: 20%;
+p:first-line{
+    color: blueviolet;
+    font-size: 25px;
 }
 
-input:enabled{
-    background: green;
-    color: aqua;
-}
-
-input:disabled{
-    background-color: red !important;
+p:first-letter{
+    font-size: 40px;
+    background-color: firebrick;
     color: white;
-}
-
-input:checked{
-    width: 100px;
-    height: 100px;
+    padding: 4px 10px;
+    text-transform: uppercase;
 }
