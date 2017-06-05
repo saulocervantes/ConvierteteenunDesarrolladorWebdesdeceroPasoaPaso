@@ -20,6 +20,15 @@ p > span{
     font-size: 20px;
 }
 
-h3 + a{
-    font-size: 25px;
+.otro_contenido + p{
+    background-color: crimson;
+    color: white;
+}
+
+.otro_contenido ~ p{
+    background-color: cadetblue;
+}
+
+h3 ~ a{
+    font-size: 45px;
 }
