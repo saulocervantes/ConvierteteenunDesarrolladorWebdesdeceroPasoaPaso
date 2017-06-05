@@ -3,15 +3,15 @@
     padding: 0;
 }
 
-p:first-line{
-    color: blueviolet;
-    font-size: 25px;
+h1::before{
+    content: 'Esta es la etiqueta ';
+    font-size: 50px;
+    color: firebrick;
+    font-family: Helvetica;
 }
 
-p:first-letter{
-    font-size: 40px;
-    background-color: firebrick;
-    color: white;
-    padding: 4px 10px;
-    text-transform: uppercase;
+h1::after{
+    content: '.';
+    font-size: 50px;
+    color: firebrick;
 }
