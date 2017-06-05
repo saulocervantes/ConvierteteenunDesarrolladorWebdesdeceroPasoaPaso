@@ -36,25 +36,15 @@ nav ul li a{
 }
 
 #section3{
-    background-color: blueviolet;
+    background-color: antiquewhite;
 }
 
 h1{
     text-align: center;
 }
 
-:empty{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: aquamarine;
-}
-
-p{
-    background-color: aquamarine;
-}
-
-section:not(.cualquiernombre){
-    width: 70%;
-    margin: 0 auto;
+:target{
+    background-color: firebrick !important;
+    color: white;
+    padding: 40px;
 }
