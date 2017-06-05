@@ -18,14 +18,35 @@ p span:only-child{
     color: black;
 }
 
-a:lang(es){
-    background-color: blueviolet;
-    color: white;
-    padding: 5px;
+a{
+    display: block;
+    margin: 5px;
     text-decoration: none;
 }
 
-a:lang(en){
-    background-color: forestgreen;
+a:link{
+    color: forestgreen;
+}
+
+a:visited{
+    color: darkgoldenrod;
+}
+
+a:hover, p:hover{
+    background-color: aquamarine;
+    color: black;
+    padding: 20px;
+    cursor: pointer;
+}
+
+a:active{
+    background-color: black;
     color: white;
+    padding: 20px;
+}
+
+input:focus, textarea:focus{
+    background-color: firebrick;
+    color: white;
+    padding: 20px;
 }
