@@ -17,3 +17,15 @@ p span:only-child{
     font-size: 25px;
     color: black;
 }
+
+a:lang(es){
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:lang(en){
+    background-color: forestgreen;
+    color: white;
+}
