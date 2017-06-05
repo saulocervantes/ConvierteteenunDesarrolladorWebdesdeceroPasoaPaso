@@ -1,52 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: Helvetica;
 }
 
-p span:first-child{
-    background-color: aqua;
+caption {
+    font-size: 30px;
 }
 
-p span:last-child{
-    background-color: brown;
+table {
+    border-collapse: collapse;
+    margin: 30px auto;
+}
+
+thead th {
+    border-bottom: 1px solid #8d1f6f;
+}
+
+th, td {
+    padding: 10px 15px;
+    border-right: 1px solid #8d1f6f;
+    border-bottom: 1px solid #8d1f6f;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:nth-child(1){
+    background-color: dodgerblue;
     color: #fff;
-}
-
-p span:only-child{
-    background-color: chartreuse;
-    font-size: 25px;
-    color: black;
-}
-
-a{
-    display: block;
-    margin: 5px;
-    text-decoration: none;
-}
-
-a:link{
-    color: forestgreen;
-}
-
-a:visited{
-    color: darkgoldenrod;
-}
-
-a:hover, p:hover{
-    background-color: aquamarine;
-    color: black;
-    padding: 20px;
-    cursor: pointer;
-}
-
-a:active{
-    background-color: black;
-    color: white;
-    padding: 20px;
-}
-
-input:focus, textarea:focus{
-    background-color: firebrick;
-    color: white;
-    padding: 20px;
 }
