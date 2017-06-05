@@ -9,7 +9,8 @@ caption {
 }
 
 table {
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 15px;
     margin: 30px auto;
 }
 
@@ -31,7 +32,11 @@ tbody tr:last-child td {
     border-bottom: none;
 }
 
-tbody tr:nth-child(-n + 3){
+tbody tr:nth-last-child(4n + 1){
     background-color: dodgerblue;
     color: #fff;
+}
+
+colgroup col:nth-child(2n + 2){
+    background-color: firebrick;
 }
