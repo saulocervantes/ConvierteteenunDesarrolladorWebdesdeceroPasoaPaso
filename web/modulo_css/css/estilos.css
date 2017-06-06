@@ -3,14 +3,18 @@
     padding: 20px;
 }
 
-p{
-    font-family: Arial, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: small;
-    font-variant: small-caps;
+p:nth-child(even){
+    font-family: Helvetica, sans-serif;
+    text-indent: 30px;
+    text-transform: capitalize;
+    white-space:pre-wrap;
+    text-decoration: overline;
 }
 
-p:nth-child(2){
-    font: italic bold small-caps 35px Helvetica;
+p:nth-child(odd){
+    text-indent: 20px;
+    word-spacing: 30px;
+    letter-spacing: 0.7em;
+    text-align: center;
+    text-decoration: line-through;
 }
