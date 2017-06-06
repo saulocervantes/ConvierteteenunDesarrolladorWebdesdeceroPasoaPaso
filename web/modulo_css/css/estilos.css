@@ -7,4 +7,10 @@ p{
     font-family: Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
+    font-size: small;
+    font-variant: small-caps;
+}
+
+p:nth-child(2){
+    font: italic bold small-caps 35px Helvetica;
 }
