@@ -1,27 +1,16 @@
 * {
     margin: 0;
-    padding: 20px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
-p{
-    font-family: Helvetica, sans-serif;
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: brown;
-    text-decoration-line: underline;
-    text-align-last: justify;
-    word-wrap: break-word;
+
+ul, ol{
+    list-style-type: upper-roman;
+    list-style-position: outside;
+    list-style-image: url(https://impactofinal.org/webespa/imagenes/vineta.png);
 }
 
-p:last-of-type{
-    height: 20px;
-    text-decoration: underline;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-shadow: 
-}
-
-h2{
-    text-shadow: 5px 7px 4px rgba(123, 123, 75, 0.4);
+li{
+    border: 1px solid blue;
+    padding: 5px;
 }
