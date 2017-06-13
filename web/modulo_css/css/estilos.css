@@ -1,53 +1,25 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 15px;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
-nav{
-    margin: 40px;
-    border: 1px dashed red;
-    padding: 10px;
-}
-
-ul li {
-    list-style: none;
-    padding: 5px;
-    border: 1px dashed;
-}
-
-span{
-    display: inline-block;
-    width: 70px;
-    height: 20px;
-    background-color: brown;
-    color: white;
-    padding: 2px;
-}
-
-td, th{
-    padding: 20px;
-}
-
 div{
-    display: table;
+    background-color: aquamarine;
 }
 
-article{
-    display: table-caption;
-    text-align: center;
-    border: 1px solid black;
+img{
+    float: left;
 }
 
-a{
-    display: table-row;
+h3{
+    float: left;
 }
 
 p{
-    display: table-cell;
-    padding: 10px;
+    float: left;
 }
 
-section{
-    display: table-header-group;
+br{
+    clear: both;
 }
