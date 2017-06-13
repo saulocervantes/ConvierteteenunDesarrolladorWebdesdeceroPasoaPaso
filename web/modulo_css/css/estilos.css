@@ -17,5 +17,37 @@ ul li {
 }
 
 span{
-    display: block;
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    background-color: brown;
+    color: white;
+    padding: 2px;
+}
+
+td, th{
+    padding: 20px;
+}
+
+div{
+    display: table;
+}
+
+article{
+    display: table-caption;
+    text-align: center;
+    border: 1px solid black;
+}
+
+a{
+    display: table-row;
+}
+
+p{
+    display: table-cell;
+    padding: 10px;
+}
+
+section{
+    display: table-header-group;
 }
