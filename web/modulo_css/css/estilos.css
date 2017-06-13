@@ -23,8 +23,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px dashed black;
-    box-sizing: content-box;
+    padding: 10px;
+    border: 7px dashed black;
+    box-sizing: border-box;
 }
 
 h1{
