@@ -5,23 +5,20 @@
 }
 
 .caja{
-    height: 250px;
-    width: 250px;
+    height: auto;
+    width: 400px;
+    border: 5px solid green;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
     background-color: aquamarine;
-    border: 15px dashed red;
-    border-top: 10px solid black;
-    border-bottom: 10px solid yellow;
-    border-right: 10px solid blue;
-    border-left: 10px solid red;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    
-    padding: 10px 30px 10px 20px;
-    
-    border-bottom-color: fuchsia;
-    border-top-style: dashed;
-    border-bottom-style: dotted;
-    border-right-width: 25px;
+    border: 19px dashed rgba(40, 105, 21, 0.61);
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin: 20px 10px 40px 40px;
 }
