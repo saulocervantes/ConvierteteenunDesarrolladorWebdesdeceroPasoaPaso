@@ -4,37 +4,18 @@
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.contenedor{
-    width: 400px;
-    height: auto;
-    margin: 20px auto;
-    border: 3px solid #8d1e84;
-    overflow: hidden;
-    display: table;
+nav{
+    margin: 40px;
+    border: 1px dashed red;
     padding: 10px;
-    background-color: cornsilk;
 }
 
-.caja{
-    height: 100px;
-    width: 50%;
-    background-color: aquamarine;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border: 7px dashed black;
-    box-sizing: border-box;
+ul li {
+    list-style: none;
+    padding: 5px;
+    border: 1px dashed;
 }
 
-h1{
-    background-color: brown;
-    color: white;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+span{
+    display: block;
 }
