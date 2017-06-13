@@ -8,11 +8,20 @@
     height: 250px;
     width: 250px;
     background-color: aquamarine;
-    border: 10px solid black;
+    border: 15px dashed red;
+    border-top: 10px solid black;
+    border-bottom: 10px solid yellow;
+    border-right: 10px solid blue;
+    border-left: 10px solid red;
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
     
     padding: 10px 30px 10px 20px;
+    
+    border-bottom-color: fuchsia;
+    border-top-style: dashed;
+    border-bottom-style: dotted;
+    border-right-width: 25px;
 }
