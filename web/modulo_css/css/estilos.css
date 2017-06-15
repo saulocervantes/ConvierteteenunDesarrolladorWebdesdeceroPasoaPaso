@@ -11,9 +11,23 @@ html{
 .padre{
     padding: 10px;
     background-color: aqua;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .padre p{
-    font-size: 2rem;
+    font-size: 1em;
+    font-size: 150%;
+    font-size: 30px;
+}
+
+.padre2{
+    width: 300px;
+    height: 150px;
+    background-color: blueviolet;
+}
+
+.hijo1{
+    height: 50px;
+    background-color: forestgreen;
+    width: 17%;
 }
