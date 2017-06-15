@@ -5,29 +5,19 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 25px;
 }
 
-.padre{
-    padding: 10px;
-    background-color: aqua;
-    font-size: 20px;
+.caja1{
+    background-color: aquamarine;
+    height: 100px;
+    width: 50vw;
+    float: left;
 }
 
-.padre p{
-    font-size: 1em;
-    font-size: 150%;
-    font-size: 30px;
-}
-
-.padre2{
-    width: 300px;
-    height: 150px;
-    background-color: blueviolet;
-}
-
-.hijo1{
-    height: 50px;
-    background-color: forestgreen;
-    width: 17%;
+.caja2{
+    background-color: crimson;
+    width: 100px;
+    height: 50vh;
+    float: left;
 }
