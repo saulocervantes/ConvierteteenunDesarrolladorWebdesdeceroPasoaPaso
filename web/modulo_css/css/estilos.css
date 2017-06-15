@@ -4,6 +4,10 @@
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
+html{
+    font-size: 10px;
+}
+
 .padre{
     padding: 10px;
     background-color: aqua;
@@ -11,5 +15,5 @@
 }
 
 .padre p{
-    font-size: 2ex;
+    font-size: 2rem;
 }
