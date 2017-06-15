@@ -16,6 +16,7 @@
     width: 70%;
     height: 600px;
     float: left;
+    position: relative;
 }
 
 .d3{
@@ -48,9 +49,9 @@
     width: 30%;
     float: left;
     background-color: firebrick;
-    position: relative;
-    top: 50px;
-    left: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .i3{
