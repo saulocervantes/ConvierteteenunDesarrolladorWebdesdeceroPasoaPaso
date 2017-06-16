@@ -13,14 +13,25 @@ section{
     height: 400px;
 }
 
+.uno{
+    height: 300px;
+}
+
+.uno img{
+    width: 50%;
+    filter: drop-shadow(10px 10px 15px #229d64)
+}
+
 .dos{
-    background: url(../img/paisaje.jpg) fixed no-repeat;
+    background: #3e3c65 url(../img/paisaje.jpg) fixed no-repeat;
     background-size: cover;
-    filter: /*blur(4px)*/ /*brightness(3)*/ /*contrast(1)*/ /*opacity(0.9)*/ /*sepia(1)*/ saturate(.5);
+    filter: /*blur(4px)*/ /*brightness(3)*/ /*contrast(1)*/ /*opacity(0.9)*/ /*sepia(1)*/ saturate(2);
+    background-blend-mode: overlay;
 }
 
 .tres{
-    background: url(../img/anime.jpg) fixed no-repeat center;
+    background: url(../img/anime.jpg) fixed no-repeat center #f00;
     background-size: cover;
-    filter: /*grayscale()*/ contrast(1) hue-rotate(30deg) invert(1);
+    background-blend-mode: luminosity;
+    
 }
