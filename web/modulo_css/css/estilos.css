@@ -13,33 +13,14 @@ section{
     height: 400px;
 }
 
-.uno{
-    overflow: auto;
-    padding: 45px;
-    color: white;
-/*
-    background-image: url(../img/colibri.png), url(http://lorempixel.com/600/400/);
-    background-size: 100px 200px, 500px;
-*/
-    /*    Método short    */
-    background: url(../img/colibri.png) no-repeat, url(http://lorempixel.com/600/400/) no-repeat;
-    background-size: 200px, cover;
-    border: 10px dashed green;
-    background-clip: border-box;
-    background-origin: content-box;
-    background-position: 100px, 0;
-    text-shadow: 0px 0px 5px black;
-}
-
 .dos{
-    background: url(../img/paisaje.jpg) local no-repeat;
-    border: 10px dashed green;
-    padding: 45px;
-    color: white;
-    background-clip: content-box;
-    background-origin: border-box;
+    background: url(../img/paisaje.jpg) fixed no-repeat;
+    background-size: cover;
+    filter: /*blur(4px)*/ /*brightness(3)*/ /*contrast(1)*/ /*opacity(0.9)*/ /*sepia(1)*/ saturate(.5);
 }
 
 .tres{
-    background: url(http://lorempixel.com/600/1100/) fixed no-repeat center / cover;
+    background: url(../img/anime.jpg) fixed no-repeat center;
+    background-size: cover;
+    filter: /*grayscale()*/ contrast(1) hue-rotate(30deg) invert(1);
 }
