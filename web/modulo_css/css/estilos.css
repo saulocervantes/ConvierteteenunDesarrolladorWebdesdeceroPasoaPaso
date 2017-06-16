@@ -4,37 +4,32 @@
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
-html{
-    font-size: 25px;
+header{
+    height: 300px;
+    background-color: firebrick;
 }
 
-div{
-    height: 150px;
-    width: 150px;
-    margin: 10px;
-    display: inline-block;
+section{
+    height: 400px;
 }
 
-.key{
-    background-color: chartreuse;
+.uno{
+    background-image: url(../img/colibri.png), url(http://lorempixel.com/600/400/);
+    background-color: #8682dd;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: local;
+    overflow: auto;
+    padding: 15px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    background: url(../img/colibri.png), url(http://lorempixel.com/600/400/) #8682dd no-repeat center center scroll;
 }
 
-.hex{
-    background-color: #a75ed4;
+.dos{
+    background: url(http://lorempixel.com/600/1400/) fixed no-repeat;
 }
 
-.rgb{
-    background-color: rgb(63, 68, 190);
-}
-
-.hsl{
-    background-color: hsl(337,59%,43%);
-}
-
-.rgba{
-    background-color: rgba(63, 68, 190, 0.4);
-}
-
-.hsla{
-    background-color: hsla(337,59%,43%, 0.7);
+.tres{
+    background: url(http://lorempixel.com/600/1100/) fixed no-repeat;
 }
