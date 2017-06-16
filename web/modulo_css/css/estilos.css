@@ -4,6 +4,10 @@
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
+body{
+    background-color: #275984;
+}
+
 div{
     height: 300px;
     width: 300px;
@@ -13,5 +17,12 @@ div{
     border-top-right-radius: 30px 50px;
     border-bottom-right-radius: 100px 30%;
     border-bottom-left-radius: 5em 3rem;
-    border-radius: 20px 30px 40px 50px;
+    border-radius: 40px 20px 50px 70px / 20px 30px;
+}
+
+img{
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 45px;
 }
