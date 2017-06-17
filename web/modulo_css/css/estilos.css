@@ -10,9 +10,11 @@ div{
     margin: 100px auto;
     background-color: aquamarine;
     border: 30px solid;
-    border-image-source: url(../img/border-fill.png);
-    border-image-slice: 27;
+    /*border-image-source: url(../img/border-fill.png);
+    border-image-slice: 22 38 30 18;
     border-image-width: 3em;
-    border-image-outset: 53px;
-    border-image-repeat: round;
+    border-image-outset: 50px 40px 90px 70px;
+    border-image-repeat: space;*/
+    
+    border-image: url(../img/border.png) 20 30 28 15/ 3em / 60px 80px 40px 50px round
 }
