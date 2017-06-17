@@ -8,5 +8,5 @@
     width: 400px;
     height: 200px;
     margin: 100px auto;
-    background: linear-gradient(95deg, green, white, blue, red);
+    background: linear-gradient(to top right, green 0%, white 35%, blue 55%, red 80%);
 }
