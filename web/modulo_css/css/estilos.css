@@ -4,13 +4,9 @@
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.box-shadow{
+.degradado{
     width: 400px;
     height: 200px;
-    background-color: #0071BC;
     margin: 100px auto;
-    box-shadow:
-        10px 5px 27px black,
-        -7px -7px red,
-        10px -10px green;
+    background: linear-gradient(95deg, green, white, blue, red);
 }
