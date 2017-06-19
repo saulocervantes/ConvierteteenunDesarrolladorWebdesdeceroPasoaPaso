@@ -4,20 +4,11 @@
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
-html, body{
-    height: 100%;
-}
-
-body{
-    background: linear-gradient(#4141cc, #1e867a);
-}
-
-
-.degradado-radial{
-    width: 100px;
-    height: 100px;
-    margin-left: auto;
-    border-radius: 50%;
-    background: radial-gradient( circle at 30% 50%, rgba(34, 116, 160, 0) 50%, rgb(18, 22, 39) 50%);
-    filter: blur(4px);
+.repeating{
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    background: repeating-linear-gradient(to top left, rgba(255, 0, 0, 0.3), black 50px, rgba(0, 0, 255, 0.46) 100px),
+    repeating-linear-gradient(to top right, rgba(0, 59, 255, 0.3), black 50px, rgba(183,41,201,0.27) 100px),
+    repeating-linear-gradient(to bottom left, green, yellow 50px);
 }
