@@ -8,34 +8,26 @@ body{
     background-color: brown;
 }
 
-article{
-    margin: 50px;
-    padding: 15px;
-    background-color: cornsilk;
-    column-count: 3;
-    column-gap: 30px;
-    column-rule-width: 3px;
-    column-rule-style: dashed;
-    column-rule-color: #19e678;
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     
-    column-rule: 5px dashed #897fff;
-    
-    column-width: 250px;
-    
-    columns: 3 200px;
+    flex-flow: row wrap;
+    justify-content: 
 }
 
-img{
-    margin: 15px 0;
-    max-width: 100%
+#contenedor div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    box-sizing: border-box;
 }
 
 p{
-    margin: 10px 0;
-}
-
-h1{
-    column-span: all;
-    text-align: center;
-    margin: 10px 0;
+    font-size: 39px;
 }
