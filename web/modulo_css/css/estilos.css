@@ -9,12 +9,11 @@ body{
 }
 
 #contenedor{
+    height: 700px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     
     flex-flow: row wrap;
-    justify-content: 
+    justify-content: space-around;
 }
 
 #contenedor div{
