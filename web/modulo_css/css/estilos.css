@@ -13,10 +13,9 @@ body{
     display: flex;
     
     flex-flow: row nowrap;
-/*
-    align-items: baseline;
-    align-content: flex-start;
-*/
+
+    align-items: center;
+/*    align-content: flex-start;  */
 }
 
 #contenedor div{
@@ -45,6 +44,7 @@ p{
     flex-grow: 1;
     flex-shrink: 3;
     flex: 1 1 200px;
+    align-self: flex-end;
 }
 
 .tres{
