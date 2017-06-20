@@ -12,13 +12,13 @@ body{
     height: 700px;
     display: flex;
     
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: baseline;
 }
 
 #contenedor div{
     height: 100px;
-    width: 100px;
+    width: 200px;
     background-color: aquamarine;
     display: flex;
     justify-content: center;
@@ -28,5 +28,5 @@ body{
 }
 
 p{
-    font-size: 39px;
+    font-size: 9px;
 }
