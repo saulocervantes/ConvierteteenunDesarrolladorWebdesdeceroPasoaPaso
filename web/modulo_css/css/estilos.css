@@ -27,7 +27,8 @@ div i{
 }
 
 div:hover i{
-    transform: translate(120px, 180px);
-/*    transform-origin: 100% 100%;*/
+    transform:scale(1.5) rotate(100turn) translate(-130px, 130px) skewX(39deg);
+    transform-origin: 100% 100%;
+    position: fixed;
 }
 
