@@ -22,12 +22,12 @@ div{
 }
 
 div i{
-    color: brown;
+    color: #ffffff;
     transition: all .5s ease;
 }
 
 div:hover i{
-    transform: skewX(23deg);
+    transform: translate(120px, 180px);
 /*    transform-origin: 100% 100%;*/
 }
 
