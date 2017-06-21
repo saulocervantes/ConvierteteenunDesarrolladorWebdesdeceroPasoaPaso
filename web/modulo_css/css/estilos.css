@@ -27,7 +27,7 @@ div i{
 }
 
 div:hover i{
-    transform: scaleY(2);
+    transform: skewX(23deg);
 /*    transform-origin: 100% 100%;*/
 }
 
