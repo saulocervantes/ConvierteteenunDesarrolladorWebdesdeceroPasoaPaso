@@ -27,7 +27,7 @@ div i{
 }
 
 div:hover i{
-    transform: rotate(180deg);
-    transform-origin: 0px 100px;
+    transform: scaleY(2);
+/*    transform-origin: 100% 100%;*/
 }
 
