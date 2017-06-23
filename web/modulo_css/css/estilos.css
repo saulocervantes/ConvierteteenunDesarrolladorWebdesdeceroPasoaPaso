@@ -10,29 +10,29 @@ body{
     
 }
 
-.contenedor{
-    cursor:pointer;
-    width: 250px;
-    height: 250px;
-    margin: 20% auto;
-    position: relative;
-    transition: all 1s ease;
-    transform-style: preserve-3d;
+.circulo{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: identificador;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+    animation-fill-mode: 
 }
 
-.contenedor div > img{
-    width: 100%;
-}
-
-.front, .back{
-    position: ;
-    backface-visibility: hidden;
-}
-
-.front{
-    transform: rotateY(180deg);
-}
-
-.contenedor:hover{
-    transform: rotateY(180deg);
+@keyframes identificador {
+    from{
+        background-color: burlywood;
+        border-radius: 0;
+    }
+    
+    to{
+        background-color: chartreuse;
+        border-radius: 50%;
+    }
 }
