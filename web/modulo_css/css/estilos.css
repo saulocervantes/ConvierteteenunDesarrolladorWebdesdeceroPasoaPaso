@@ -30,5 +30,5 @@ body{
 .front{}
 
 .contenedor:hover{
-    transform: translateZ(200px);
+    transform: rotate3d(1,1,1,95deg);
 }
