@@ -7,6 +7,7 @@
 body{
     background-color: brown;
     perspective: 800px;
+    perspective-origin: 50% 1000px;
 }
 
 .contenedor{
@@ -30,5 +31,5 @@ body{
 .front{}
 
 .contenedor:hover{
-    transform: translate3d(50px,150px,200px);
+    transform: rotateX(45deg);
 }
