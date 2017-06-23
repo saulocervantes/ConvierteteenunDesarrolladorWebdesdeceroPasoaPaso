@@ -23,16 +23,43 @@ body{
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
+    
+    animation: identificador 3s ease-in-out 1s infinite alternate forwards;
 }
 
 @keyframes identificador {
-    from{
+    0%{
         background-color: burlywood;
         border-radius: 0;
+        top: 0;
+        left: 0;
     }
     
-    to{
+    25%{
+        background-color: #87dbde;
+        top: 0;
+        left: 80%;
+    }
+    
+    33%{
+        background-color: #de87db;
+    }
+    
+    50%{
+        top: 80vh;
+        left: 80%;
+    }
+    
+    75%{
+        background-color: #ded187;
+        top: 80vh;
+        left: 0;
+    }
+    
+    100%{
         background-color: chartreuse;
         border-radius: 50%;
+        top: 0;
+        left: 0;
     }
 }
