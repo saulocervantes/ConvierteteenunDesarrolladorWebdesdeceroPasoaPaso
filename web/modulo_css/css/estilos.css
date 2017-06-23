@@ -25,7 +25,7 @@ body{
 }
 
 .front, .back{
-    position: absolute;
+    position: ;
     backface-visibility: hidden;
 }
 
