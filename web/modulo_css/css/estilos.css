@@ -63,3 +63,18 @@ body{
         left: 0;
     }
 }
+
+#play-state{
+    padding: 5px;
+    position: absolute;
+    top: 40vh;
+    left: 40%;
+}
+
+.play{
+    animation-play-state: running;
+}
+
+.pause{
+    animation-play-state: paused;
+}

@@ -7,5 +7,29 @@
 </head>
 <body>
    <div class="circulo"></div>
+   <button id="play-state">Play/Pause</button>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+   <script>
+      $(function(){
+          
+          var contador = 1;
+          var circulo = $('.circulo');
+          
+          $('#play-state').click(function(){
+              if( contador == 1){
+                  circulo.addClass('pause');
+                  circulo.removeClass('play');
+                  contador = 0;
+              }else{
+                  contador = 1;
+                  circulo.addClass('play');
+                  circulo.removeClass('pause');
+              }
+          });      
+          
+      });
+   </script>
 </body>
 </html>
