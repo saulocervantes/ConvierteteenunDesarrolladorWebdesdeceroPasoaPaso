@@ -1,3 +1,4 @@
 header .cajas .caja1 p::before{
     content: "La ventana del navegador tiene un tamaño de 0 a 480px de ancho";
+    color: coral;
 }
