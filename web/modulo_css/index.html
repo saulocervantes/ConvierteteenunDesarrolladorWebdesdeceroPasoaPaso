@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>@Keyframes</title>
+    <title>@media queries</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-   <div class="circulo"></div>
-   <button id="play-state">Play/Pause</button>
-   
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-   <script>
-      $(function(){
-          
-          var contador = 1;
-          var circulo = $('.circulo');
-          
-          $('#play-state').click(function(){
-              if( contador == 1){
-                  circulo.addClass('pause');
-                  circulo.removeClass('play');
-                  contador = 0;
-              }else{
-                  contador = 1;
-                  circulo.addClass('play');
-                  circulo.removeClass('pause');
-              }
-          });      
-          
-      });
-   </script>
+    <header>
+        <h1>Media Queries</h1>
+        <div class="cajas">
+            <div class="caja1">
+                <p></p>
+            </div>
+            <div class="caja2">
+                <p>Orientación:</p>
+            </div>
+        </div>
+
+    </header>
+    <section id="contenido">
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <div class="img">
+                <img src="img/anime.jpg" alt="">
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque perspiciatis fugiat, quia voluptates dicta quae, nulla commodi, accusamus cum quidem
+                <br>
+                <br>obcaecati nemo dolorem saepe, velit cupiditate. Aut, eligendi, labore. Mollitia.</p>
+        </article>
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <div class="img">
+                <img src="img/anime.jpg" alt="">
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque perspiciatis fugiat, quia voluptates dicta quae, nulla commodi, accusamus cum quidem
+                <br>
+                <br>obcaecati nemo dolorem saepe, velit cupiditate. Aut, eligendi, labore. Mollitia.</p>
+        </article>
+        <article>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <div class="img">
+                <img src="img/anime.jpg" alt="">
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque perspiciatis fugiat, quia voluptates dicta quae, nulla commodi, accusamus cum quidem
+                <br>
+                <br>obcaecati nemo dolorem saepe, velit cupiditate. Aut, eligendi, labore. Mollitia.</p>
+        </article>
+
+    </section>
 </body>
+
 </html>

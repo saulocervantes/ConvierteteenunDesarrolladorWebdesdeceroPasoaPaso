@@ -1,0 +1,3 @@
+header .cajas .caja1 p::before{
+    content: "La ventana del navegador tiene 480px de ancho o más";
+}
