@@ -51,7 +51,7 @@ img{
     width: 100%;
 }
 
-@media not all and (max-width: 600px){
+@media only print and (max-width: 600px){
     body{
         background-color: brown;
     }
