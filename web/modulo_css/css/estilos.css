@@ -51,7 +51,7 @@ img{
     width: 100%;
 }
 
-@media (max-width: 600px), (max-height: 400px){
+@media not all and (max-width: 600px){
     body{
         background-color: brown;
     }
